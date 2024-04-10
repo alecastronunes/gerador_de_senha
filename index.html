@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="script/scritp.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <div id="container">
+        <img src="img/img_cadeado.png" alt="cadeado" id="password-img">
+        <h1 id="title">Gerar Senha</h1>
+
+        <div id="password-container">
+            <span id="password"></span>
+            <button id="copy">
+                <i class="fa-solid fa-copy"></i>
+            </button>
+        </div>
+
+        <div id="password-items">
+            <div class="item">
+                <input type="number" id="size" name="size">
+                <label for="size">
+                    Quantidade de caracteres
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-uppercase" id="include-uppercase">
+                <label for="include-uppercase">
+                    Incluir letra maiúscula
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-lowercase" id="include-lowercase">
+                <label for="include-lowercase">
+                    Incluir letra minúscula
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-number" id="include-number">
+                <label for="include-number">
+                    Incluir número
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-especial-character" id="include-especial-character">
+                <label for="include-especial-character">
+                    Incluir caractere especial
+                </label>
+            </div>
+
+            <button id="generate">
+                Gerar senha
+            </button>
+        </div>
+    </div>
+</body>
+</html>
